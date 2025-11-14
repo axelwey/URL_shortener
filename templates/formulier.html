@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<h4>Geef de link in waarvan je een alias wilt maken:</h4>
+<form action="/alias_toevoegen" method="post">
+    <input type="text" id="alias" name="alias"> 
+    <button type="submit">verstuur</button>
+</form>
+<form action="http://127.0.0.1:5000/">
+    <button type="submit">Home page</button>
+</form>
+<main class="foutmelding">{{foutmelding}}</main>

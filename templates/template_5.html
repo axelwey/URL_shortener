@@ -1,0 +1,15 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <main>
+        <h1>citaat</h1>
+        {% if data %}
+            <style>blockquote {padding:5vh; color:red;border:2px solid saddlebrown}</style>
+            <blockquote>"{{data}}"</blockquote>
+        {% else %}
+            <p>Geen data gevonden</p>
+        {% endif %}
+    </main>
+</body>

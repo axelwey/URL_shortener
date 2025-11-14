@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<p class="foutmelding">{{foutmelding}}</p>
+<p>gelieve de url in te geven waarvoor je een short-url wilt maken\n Bv. www.google.com</p>
+<form action="http://127.0.0.1:5000/input">
+    <button type="submit">alias_toevoegen</button>
+</form>

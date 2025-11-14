@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<home>
+    <form method="post" action="/greet">
+        <input type="text" name="voornaam" placeholder="Geef je voornaam in">
+        <input type="text" name="achternaam" placeholder="Geef je achternaam in">
+        <button type="submit">Verstuur</button>
+    </form>
+</home>
